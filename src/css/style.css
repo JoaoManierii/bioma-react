@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Heebo, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    width: 100%;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray; 
+}
+
+.header-logo {
+    width: 150px;
+    margin-left: 100px;
+}
+
+.consultor {
+    background-image: url(../images/MainBackground.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 0 6rem;
+    gap: 2.25rem;
+}
+
+.alimentos {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70vh;
+    background: linear-gradient(90deg, #D8D8D8 70%, #FDB66B 30%);
+    white-space: nowrap;
+}
+
+.alimentos .left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 6rem;
+}
+
+.alimentos .rigth {
+    padding: 4rem 0;
+    overflow: hidden;
+}
+
+.alimentos .rigth img {
+    width: 800px;
+    margin-right: -40px;
+    box-shadow: 17px 6px 45px -15px rgba(0,0,0,0.75);
+}
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 3rem;
+    background-color: #F1F3F8;
+}
+
+.lista h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.lista h6 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: inherit;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.lista svg {
+    width: 1rem;
+}
+
+.lista p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgb(85 85 85)
+}
+
+.colabore  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+    min-height: 70vh;
+}
+
+.colabore .video {
+    width: 50rem;
+    border-radius: .5rem;
+    box-shadow: 17px 6px 45px -15px rgba(0,0,0,0.75);
+}
+
+.colabore .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.investimentos {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70vh;
+    background: linear-gradient(90deg, #F1F3F8 70%, #539D71 30%);
+    white-space: nowrap;
+}
+
+.investimentos .left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 6rem;
+}
+
+.investimentos .rigth {
+    padding: 4rem 0;
+    overflow: hidden;
+}
+
+.investimentos .rigth img {
+    width: 650px;
+    border-radius: 10px;
+    box-shadow: 60px -7px 78px -56px rgba(0,0,0,0.65);
+}
+
+.oportunidades {
+    background: linear-gradient(180deg, #fff 40%, #DCDEE2 40%);
+    padding-bottom: 50px;
+}
+
+.img-plant {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    background-color: #CCC5BD;
+    margin: 6rem;
+    border-radius: 1rem;
+}
+
+.img-plant .texts {
+    display: flex;
+    flex-direction: column ;
+    gap: 1rem;
+}
+
+.title-plant {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #222222;
+}
+
+.subtitle-plant {
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: rgb(85 85 85)
+}
+
+.contato {
+    padding: 0 6rem;
+    display: flex;
+    gap: 4rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.contato-links {
+    display: flex;
+    text-decoration: underline;
+    cursor: pointer;
+    gap: 2rem;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.vl {
+    border-left: 1px solid #B0B2B6;
+    height: 70px;
+}
+
+.footer {
+    display: flex;
+    padding: 20px 6rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CECFD2;
+}
+
+.footer img {
+    width: 120px;
+}
+
+.footer .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer .redes a svg {
+    color: gray;
+    transition: 400ms;
+}
+
+.footer .redes a svg:hover {
+    color: #FDB66B;
+}
+
+.footer .redes a svg:active {
+    color: #148337;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #0053E0;
+    color: whitesmoke;
+    padding: 10px 15px;
+    white-space: nowrap;
+    max-width: min-content;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    box-shadow: 0px 10px 53px -10px rgba(0,0,0,0.75);
+}
+
+.button:hover {
+    background-color: #1D72FE;
+}
+
+.green-text {
+    color: #148337;
+}
+
+@media (max-width: 1440px) { 
+    .colabore .video {
+        width: 40rem;
+    }
+}
+
+@media (max-width: 1366px) {
+    .colabore .video {
+        width: 35rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .consultor {
+        background-image: url(../images/mainBackMobile.png);
+    }
+    .colabore {
+        flex-wrap: wrap;
+    }
+    .colabore .video {
+        width: 100%;
+    }
+    .investimentos {
+        padding: 1rem;
+        white-space: normal;
+        flex-wrap: wrap;
+        background: linear-gradient(180deg, #F1F3F8 50%, #539D71 50%);
+        justify-content: center;
+        align-items: center;
+    }
+    .investimentos .left {
+        padding: 2rem;
+    }
+    .img-plant {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .alimentos {
+        justify-content: center;
+        flex-wrap: wrap;
+        background: linear-gradient(180deg, #D8D8D8 50%, #FDB66B 50%);
+    }
+    .alimentos .left {
+        padding: 4rem 50px 0 50px;
+    }
+    .alimentos .rigth {
+        padding: 4rem 0;
+    }
+    .alimentos .rigth img {
+        width: 600px;
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .alimentos .rigth img {
+        width: 100%;
+        margin: 0;
+    }
+    .img-plant img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .alimentos {
+        white-space: normal;
+        text-align: center;
+        padding: 20px;
+    }
+    .title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .lista {
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    *{
+        min-height: 0;
+    }
+    .header {
+        justify-content: center;
+    }
+    .header-logo {
+        margin: 0;
+    }
+    .consultor {
+        padding: 0 2rem;
+        min-height: 60vh;
+    }
+    .alimentos {
+        background: linear-gradient(180deg, #D8D8D8 80%, #FDB66B 20%);
+        padding: 10px;
+        min-height: 60vh;
+    }
+    .alimentos .left {
+        padding: 4rem 15px 0 15px;
+    }
+    .alimentos .rigth {
+        width: 100%;
+        padding: 0;
+    }
+    .alimentos .rigth img {
+        content: url("../images/biomaMainMobile.png");
+        margin: 0;
+
+    }
+    .colabore {
+        flex-wrap: wrap;
+        padding: 50px 15px;
+        min-height: 60vh;
+        text-align: center;
+    }
+    .investimentos {
+        padding: 3rem 1rem;
+        text-align: center;
+        background: linear-gradient(180deg, #F1F3F8 80%, #539D71 20%);
+    }
+    .investimentos .left {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 0;
+    }
+    .investimentos .rigth {
+        padding: 0;
+        margin-top: 3rem;
+    }
+    .investimentos .rigth img {
+        width: 100%;
+        content: url("../images/wallet.png");
+    }
+    .lista h6 {
+        flex-direction: column;
+    }
+    .lista svg {
+        width: 2rem;
+    }
+    .img-plant {
+        margin: 2rem;
+    }
+    .contato {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem 1rem;
+    }
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+        gap: 20px;
+    }
+    .vl {
+        display: none;
+    }
+    .button {
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
+        font-size: 0.9rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+    .title {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+}
