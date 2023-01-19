@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Heebo, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.investimentos {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70vh;
+    background: linear-gradient(90deg, #F1F3F8 70%, #539D71 30%);
+    white-space: nowrap;
+}
+
+.investimentos .left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 6rem;
+}
+
+.investimentos .rigth {
+    padding: 4rem 0;
+    overflow: hidden;
+}
+
+.investimentos .rigth img {
+    width: 650px;
+    border-radius: 10px;
+    box-shadow: 60px -7px 78px -56px rgba(0,0,0,0.65);
+}
+
+
+.title {
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #0053E0;
+    color: whitesmoke;
+    padding: 10px 15px;
+    white-space: nowrap;
+    max-width: min-content;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    box-shadow: 0px 10px 53px -10px rgba(0,0,0,0.75);
+}
+
+.button:hover {
+    background-color: #1D72FE;
+}
+
+@media (max-width: 1024px) {
+    .investimentos {
+        padding: 1rem;
+        white-space: normal;
+        flex-wrap: wrap;
+        background: linear-gradient(180deg, #F1F3F8 50%, #539D71 50%);
+        justify-content: center;
+        align-items: center;
+    }
+    .investimentos .left {
+        padding: 2rem;
+    }
+   
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    *{
+        min-height: 0;
+    }
+    .investimentos {
+        padding: 3rem 1rem;
+        text-align: center;
+        background: linear-gradient(180deg, #F1F3F8 80%, #539D71 20%);
+    }
+    .investimentos .left {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 0;
+    }
+    .investimentos .rigth {
+        padding: 0;
+        margin-top: 3rem;
+    }
+    .investimentos .rigth img {
+        width: 100%;
+        content: url("../../assets/images/wallet.png");
+    }
+    .button {
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
+        font-size: 0.9rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+    .title {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+}

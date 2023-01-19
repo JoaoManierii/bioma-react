@@ -1,16 +1,12 @@
 import logo from '../../assets/images/logoCompleto.svg'
+import './style.css'
 
-interface HeaderPropsI{
-    titulo: string
-}
 
-function Header({titulo}:HeaderPropsI) {
+function Header() {
     return(
-        <div>
-            {titulo}
-            <img src={logo} alt="header" />
+        <div className='header'>
+            <img src={logo} alt="header" className='header-logo'/>
         </div>
     )
 }
-
 export default Header

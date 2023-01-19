@@ -29,7 +29,7 @@ a {
 }
 
 .consultor {
-    background-image: url(../images/MainBackground.png);
+    background-image: url(../assets/images/MainBackground.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -285,7 +285,7 @@ a {
 
 @media (max-width: 1024px) {
     .consultor {
-        background-image: url(../images/mainBackMobile.png);
+        background-image: url(../assets/images/mainBackMobile.png);
     }
     .colabore {
         flex-wrap: wrap;
@@ -389,7 +389,7 @@ a {
         padding: 0;
     }
     .alimentos .rigth img {
-        content: url("../images/biomaMainMobile.png");
+        content: url("../assets/images/biomaMainMobile.png");
         margin: 0;
 
     }
@@ -416,7 +416,7 @@ a {
     }
     .investimentos .rigth img {
         width: 100%;
-        content: url("../images/wallet.png");
+        content: url("../assets/images/wallet.png");
     }
     .lista h6 {
         flex-direction: column;

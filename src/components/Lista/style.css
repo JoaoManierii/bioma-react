@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Heebo, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 3rem;
+    background-color: #F1F3F8;
+}
+
+.lista h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.lista h6 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: inherit;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.lista svg {
+    width: 1rem;
+}
+
+.lista p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgb(85 85 85)
+}
+
+
+.title {
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+@media (max-width: 576px) {
+
+    .title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .lista {
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    *{
+        min-height: 0;
+    }
+    .lista h6 {
+        flex-direction: column;
+    }
+    .lista svg {
+        width: 2rem;
+    }
+    
+    .title {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+}

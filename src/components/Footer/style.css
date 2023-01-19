@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Heebo, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    display: flex;
+    padding: 20px 6rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CECFD2;
+}
+
+.footer img {
+    width: 120px;
+}
+
+.footer .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer .redes a svg {
+    color: gray;
+    transition: 400ms;
+}
+
+.footer .redes a svg:hover {
+    color: #FDB66B;
+}
+
+.footer .redes a svg:active {
+    color: #148337;
+}
+
+@media (max-width: 1440px) { 
+    .colabore .video {
+        width: 40rem;
+    }
+}
+
+@media (max-width: 1366px) {
+    .colabore .video {
+        width: 35rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .img-plant {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-plant img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    *{
+        min-height: 0;
+    }
+    .colabore {
+        flex-wrap: wrap;
+        padding: 50px 15px;
+        min-height: 60vh;
+        text-align: center;
+    }
+    
+    .img-plant {
+        margin: 2rem;
+    }
+    .contato {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem 1rem;
+    }
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+        gap: 20px;
+    }
+  
+}

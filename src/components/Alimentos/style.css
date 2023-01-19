@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Heebo, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.alimentos {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70vh;
+    background: linear-gradient(90deg, #D8D8D8 70%, #FDB66B 30%);
+    white-space: nowrap;
+}
+
+.alimentos .left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 6rem;
+}
+
+.alimentos .rigth {
+    padding: 4rem 0;
+    overflow: hidden;
+}
+
+.alimentos .rigth img {
+    width: 800px;
+    margin-right: -40px;
+    box-shadow: 17px 6px 45px -15px rgba(0,0,0,0.75);
+}
+
+.title {
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+
+@media (max-width: 900px) {
+    .alimentos {
+        justify-content: center;
+        flex-wrap: wrap;
+        background: linear-gradient(180deg, #D8D8D8 50%, #FDB66B 50%);
+    }
+    .alimentos .left {
+        padding: 4rem 50px 0 50px;
+    }
+    .alimentos .rigth {
+        padding: 4rem 0;
+    }
+    .alimentos .rigth img {
+        width: 600px;
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .alimentos .rigth img {
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .alimentos {
+        white-space: normal;
+        text-align: center;
+        padding: 20px;
+    }
+    .title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    *{
+        min-height: 0;
+    }
+    .alimentos {
+        background: linear-gradient(180deg, #D8D8D8 80%, #FDB66B 20%);
+        padding: 10px;
+        min-height: 60vh;
+    }
+    .alimentos .left {
+        padding: 4rem 15px 0 15px;
+    }
+    .alimentos .rigth {
+        width: 100%;
+        padding: 0;
+    }
+    .alimentos .rigth img {
+        content: url("../../assets/images/biomaMainMobile.png");
+        margin: 0;
+
+    }
+    .title {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+}

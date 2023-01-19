@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Heebo, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.consultor {
+    background-image: url(../../assets/images/MainBackground.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 0 6rem;
+    gap: 2.25rem;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #0053E0;
+    color: whitesmoke;
+    padding: 10px 15px;
+    white-space: nowrap;
+    max-width: min-content;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    box-shadow: 0px 10px 53px -10px rgba(0,0,0,0.75);
+}
+
+.button:hover {
+    background-color: #1D72FE;
+}
+
+@media (max-width: 1024px) {
+    .consultor {
+        background-image: url(../../assets/images/mainBackMobile.png);
+    }
+ 
+}
+
+
+
+
+@media (max-width: 576px) {
+    
+    .title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+ 
+}
+
+@media (max-width: 480px) {
+    *{
+        min-height: 0;
+    }
+   
+    .consultor {
+        padding: 0 2rem;
+        min-height: 60vh;
+    }
+}

@@ -1,13 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import Header from './components/Header';
+import Consultor from './components/Consultor';
+import Alimentos from './components/Alimentos';
+import Lista from './components/Lista';
+import Colabore from './components/Colabore';
+import Investimentos from './components/Investimentos';
+import Oportunidades from './components/Oportunidades';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <Header titulo='2'/>  
-    </div>
+    <>
+      <Header />
+      <Consultor />
+      <Alimentos />
+      <Lista />
+      <Colabore />
+      <Investimentos />
+      <Oportunidades />
+      <Footer />
+    </>
   );
 }
 
