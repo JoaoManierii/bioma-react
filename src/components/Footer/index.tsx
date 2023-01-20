@@ -25,11 +25,7 @@ function Footer() {
             icon: <Icon iconType='INSTAGRAM' />,
             isTargetBlank: true
         }, 
-
     ]
-
-
-
     return (
         <footer className="footer">
             <img src={logoCompleto} alt="logoCompleto" />
